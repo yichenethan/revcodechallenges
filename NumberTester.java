@@ -8,7 +8,8 @@ public class NumberTester{
   }
 
   public static void evenOrOdd(int num) {
-    //Limitations: not going to handle decimal cases
+    //Limitations: not going to handle decimal cases (spec does not say integer,
+    // just number)
     if(num % 2 == 0) {
       System.out.println("Even");
     } else {
@@ -17,12 +18,11 @@ public class NumberTester{
   }
 
   public static boolean primeCheck(int num) {
-    //limitations: Unessasary divison checks
-    boolean prime = true;
+    //limitations: Unessasary divison checks, negatives
     for(int i = num - 1; i > 1; i--)
       if(num % i == 0){
-        prime = false;
+        return false;
       }
-      return prime;
+      return true;
   }
 }
