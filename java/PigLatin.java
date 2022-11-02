@@ -1,3 +1,4 @@
+
 public class PigLatin {
   public static void main(String[] args) {
     System.out.println(pLatin("Revature"));

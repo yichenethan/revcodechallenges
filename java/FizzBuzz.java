@@ -1,3 +1,4 @@
+
 public class FizzBuzz {
   public static void main(String[] args) {
     String result = fizzBuzz(100);
