@@ -1,3 +1,5 @@
+from array import *
+
 y = 6
 z = lambda x: x ** y
 print (z(7))
@@ -8,10 +10,8 @@ if len(arr1) == len(arr2):
 else:
     print("array is not equal")
 
-import functools
-l=[1, 2, 3, 4, 5]
-m=functools.reduce(lambda x, y:x if x>y else y, l)
-print(m)
+min = (lambda x, y: x if x < y else y)
+print(min(101*70, 102*8))
 
 def my_func():
    x = 10
